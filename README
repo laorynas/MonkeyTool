@@ -18,5 +18,8 @@ Before creating a new image you should probably clean the work folder first:
 
 Note that these commands must be ran as root.
 
-The created image can be burned in to a CD or a USB device using utilities like
+You can download a binary version of 64-bit MonkeyTool:
+	http://x.ape3000.com/monkeytool/monkeytool-0.01-x86_64.iso
+
+The image can be burned in to a CD or a USB device using utilities like
 dd.
