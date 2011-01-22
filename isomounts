@@ -1,0 +1,3 @@
+@ARCH@/overlay.sqfs @ARCH@ / squashfs
+@ARCH@/root-image.sqfs @ARCH@ / squashfs
+
