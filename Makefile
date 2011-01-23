@@ -33,6 +33,7 @@ root-image: "$(WORKDIR)"/root-image/.arch-chroot
 "$(WORKDIR)"/root-image/.arch-chroot:
 root-image:
 	mkarchiso -D $(INSTALL_DIR) -c $(COMPRESS) -p $(PACKAGES) create "$(WORKDIR)"
+	pacman -U packages/seeker-*-$(ARCH).pkg.* -r "$(WORKDIR)"/root-image/ --noconfirm
 
 # Rule for make /boot
 boot-files: root-image

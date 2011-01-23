@@ -11,12 +11,14 @@ dnsutils
 ettercap
 file
 gnu-netcat
+hdparm
 irssi
 links
 nano
 nmap
 ntfs-3g
 openssh
+stress
 syslinux
 vim
 zsh
