@@ -12,6 +12,7 @@ ettercap
 file
 gnu-netcat
 hdparm
+htop
 irssi
 links
 nano
@@ -22,3 +23,4 @@ stress
 syslinux
 vim
 zsh
+*seeker

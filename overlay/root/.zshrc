@@ -12,7 +12,6 @@ export EDITOR="vim"
 alias ls='ls -hF --color=auto'
 alias l='ls -alF'
 alias df='df -h'
-alias vi="vim"
 alias ..="cd .."
 alias ...="cd ../.."
 

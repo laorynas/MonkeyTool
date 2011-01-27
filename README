@@ -1,25 +1,27 @@
 MonkeyTool
 -----------
 
-MonkeyTool is an Arch Linux based recovery linux distribution. It has a
-customized set of recovery and hacking tools. MonkeyTool is a live-only
-distribution: it can't be installed. Typically it is booted from a CD or a USB
-device.
+MonkeyTool is a text-based Linux distribution made for system recovery. It may
+be booted for example from an optical drive or a USB device.
 
-The image must be created on an Arch Linux system, because it takes the binaries
-from the host system. Moreover, the host system determines the architecture and
-version of the binaries.
+MonkeyTool is based on Arch Linux and it must be built on an Arch Linux system.
+If you are not running one, you could build MonkeyTool in a virtual machine.
+
+The scripts for building MonkeyTool are licensed under the ISC license. Please
+note that the software that will be packed into the image is under the copyright
+of it's respectful copyright holders.
 
 To create the image use the following command:
-	# make all
+	make
 
-Before creating a new image you should probably clean the work folder first:
-	# make clean
+It will ask for the root password with sudo for certain operations. You should
+not run "make" directly as root.
 
-Note that these commands must be ran as root.
-
-You can download a binary version of 64-bit MonkeyTool:
-	http://x.ape3000.com/monkeytool/monkeytool-0.01-x86_64.iso
+You can customize the package list by editing packages.list. The lines starting
+with an asterisk (*) are fetched from AUR.
 
 The image can be burned in to a CD or a USB device using utilities like
 dd.
+
+For more information visit the website:
+	http://ape3000.com/monkeytool/
