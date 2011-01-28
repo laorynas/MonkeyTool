@@ -7,7 +7,7 @@
 . /etc/rc.d/functions
 
 echo " "
-printhl "MonkeyTool\n"
+printhl "\033[1;32;40mMonkeyTool\n"
 printhl "Copyright 2011 Lauri Niskanen"
 printhl "Based on Arch Linux"
 printhl "Distributed under the GNU General Public License (GPL)"
