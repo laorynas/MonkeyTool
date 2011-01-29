@@ -10,7 +10,7 @@ FULLNAME=$(PWD)/MonkeyTool-$(VER)-$(ARCH)
 all: clean monkeytool
 
 monkeytool: base-fs
-	sudo sh -c "echo 'MonkeyTool $(VER)' > work/iso/version.txt"
+	sudo sh -c "echo 'MonkeyTool $(ARCH) $(VER)' > work/iso/version.txt"
 	sudo sh -c "date -u >> work/iso/version.txt"
 	sudo mkarchiso -L MonkeyTool -D monkey -c $(COMPRESS) -p syslinux iso work $(FULLNAME).iso
 

@@ -11,6 +11,9 @@ The scripts for building MonkeyTool are licensed under the ISC license. Please
 note that the software that will be packed into the image is under the copyright
 of it's respectful copyright holders.
 
+Arch Linux packages needed for building:
+	base base-devel archiso-git
+
 To create the image use the following command:
 	make
 
@@ -19,6 +22,13 @@ not run "make" directly as root.
 
 You can customize the package list by editing packages.list. The lines starting
 with an asterisk (*) are fetched from AUR.
+
+After you have created both the 32-bit image and the 64-bit you can combine them
+to a hybrid image. With it you can choose the architecture on the boot menu.
+Note that the hybrid image is about twice as big.
+
+Create a hybrid image:
+	./createhybrid.sh MonkeyTool-git-i686.iso MonkeyTool-git-x86_64.iso
 
 The image can be burned in to a CD or a USB device using utilities like
 dd.
